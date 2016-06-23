@@ -5,17 +5,25 @@
 
     <!--sizes-->
 
-    <dimen name = "size_small_24">24dp</dimen>
-    <dimen name = "size_medium_56">256dp</dimen>
-    <dimen name = "size_large_72">72dp</dimen>
+    <dimen name = "size_low_4">4dp</dimen>
+    <dimen name = "size_small_8">8dp</dimen>
+    <dimen name = "size_normal_16">16dp</dimen>
+    <dimen name = "size_medial_24">24dp</dimen>
+    <dimen name = "size_medium_32">32dp</dimen>
+    <dimen name = "size_largeless_48">48dp</dimen>
+    <dimen name = "size_large_56">56dp</dimen>
+    <dimen name = "size_larger_72">72dp</dimen>
+    <dimen name = "size_largest_96">96dp</dimen>
 
     <!--spaces-->
 
+    <dimen name = "spasing_low_4">4dp</dimen>
     <dimen name = "spasing_small_8">8dp</dimen>
     <dimen name = "spasing_normal_16">16dp</dimen>
     <dimen name = "spasing_medial_24">24dp</dimen>
-    <dimen name = "spasing_madium_32">36dp</dimen>
+    <dimen name = "spasing_madium_32">32dp</dimen>
     <dimen name = "spasing_large_56">56dp</dimen>
     <dimen name = "spasing_larger_72">72dp</dimen>
+    <dimen name = "spasing_largest_96">96dp</dimen>
 
 </resources>
