@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <android.support.v4.widget.NestedScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -45,6 +45,10 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            style="@style/separat">
+        </LinearLayout>
+
 
         <LinearLayout
         android:layout_width="0dp"
@@ -67,12 +71,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="@string/rating"
+            android:text="@string/code"
             />
 
-    </LinearLayout>
+        </LinearLayout>
 
-
+        <LinearLayout
+            style="@style/separat">
+        </LinearLayout>
 
         <LinearLayout
         android:layout_width="0dp"
@@ -95,7 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="@string/rating"
+            android:text="@string/projects"
             />
 
         </LinearLayout>
@@ -116,7 +122,7 @@
             />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="@dimen/size_larger_72"
             android:layout_weight="1"
             android:orientation="vertical"
@@ -130,9 +136,9 @@
                     android:id="@+id/phone_et"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Мобильный телефон"
+                    android:hint="@string/mobile"
                     android:inputType="phone"
-                    android:text="+79046938290"
+                    android:text="@string/number"
                     android:enabled="false"
                     android:textColor="@color/color_black"
                     android:textColorHint="@color/color_gray"
@@ -169,7 +175,7 @@
             />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="@dimen/size_larger_72"
             android:layout_weight="1"
             android:orientation="vertical"
@@ -183,9 +189,9 @@
                     android:id="@+id/email_et"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="E-mail"
+                    android:hint="@string/email"
                     android:inputType="phone"
-                    android:text="My E-mail"
+                    android:text="@string/mail"
                     android:enabled="false"
                     android:textColor="@color/color_black"
                     android:textColorHint="@color/color_gray"
@@ -221,7 +227,7 @@
             />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="@dimen/size_larger_72"
             android:layout_weight="1"
             android:orientation="vertical"
@@ -235,9 +241,9 @@
                     android:id="@+id/vk_prof_et"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Профиль в VK "
+                    android:hint="@string/VK"
                     android:inputType="phone"
-                    android:text="vk.com/id367175143"
+                    android:text="@string/VK.com"
                     android:enabled="false"
                     android:textColor="@color/color_black"
                     android:textColorHint="@color/color_gray"
@@ -273,7 +279,7 @@
             />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="@dimen/size_larger_72"
             android:layout_weight="1"
             android:orientation="vertical"
@@ -287,9 +293,9 @@
                     android:id="@+id/git_repo_et"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Репозиторий"
+                    android:hint="@string/repo"
                     android:inputType="phone"
-                    android:text="github.com/korsul25"
+                    android:text="@string/Git"
                     android:enabled="false"
                     android:textColor="@color/color_black"
                     android:textColorHint="@color/color_gray"
@@ -324,7 +330,7 @@
             />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="@dimen/size_larger_72"
             android:layout_weight="1"
             android:orientation="vertical"
@@ -338,9 +344,9 @@
                     android:id="@+id/mySelf_et"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="О себе"
+                    android:hint="@string/myself"
                     android:inputType="phone"
-                    android:text="Участник DEV Intensive"
+                    android:text="@string/devInt"
                     android:enabled="true"
                     android:textColor="@color/color_black"
                     android:textColorHint="@color/color_gray"
@@ -357,6 +363,8 @@
         android:layout_height="@dimen/line_size"
         android:background="@color/color_gray_light"
         android:layout_marginLeft="@dimen/spacing_larger_72"/>
+    />
 
 
 </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

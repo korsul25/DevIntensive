@@ -37,5 +37,14 @@
         <item name="android:inputType">phone</item>
         <item name="android:textColor">@color/color_white</item>
     </style>
+    
+    <style name="separat">
+        <item name="android:layout_width">@dimen/size_tiny_2</item>
+        <item name="android:layout_height">@dimen/size_large_56</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/color_gray_light</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/size_normal_16</item>
+    </style>
 
 </resources>

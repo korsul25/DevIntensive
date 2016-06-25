@@ -5,4 +5,18 @@
     <string name="Green">Green_Btn</string>
     <string name="five">5</string>
     <string name="rating">Рейтинг</string>
+    <string name="code">Написано строк</string>
+    <string name="projects">Проектов</string>
+    <string name="mobile">Мобильный телефон</string>
+    <string name="number">89046938290</string>
+    <string name="mail">My E-mail</string>
+    <string name="email">e-mail</string>
+    <string name="VK">профиль в VK</string>
+    <string name="VK.com">vk.com/id367175143</string>
+    <string name="repo">Репозиторий</string>
+    <string name="Git">github.com/korsul25</string>
+    <string name="myself">О себе</string>
+    <string name="devInt">Участник DEV Intensive</string>
+
+
 </resources>
