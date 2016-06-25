@@ -5,6 +5,7 @@
 
     <!--sizes-->
 
+    <dimen name = "size_tiny_2">2dp</dimen>
     <dimen name = "size_low_4">4dp</dimen>
     <dimen name = "size_small_8">8dp</dimen>
     <dimen name = "size_normal_16">16dp</dimen>
@@ -25,7 +26,12 @@
     <dimen name = "spacing_large_56">56dp</dimen>
     <dimen name = "spacing_larger_72">72dp</dimen>
     <dimen name = "spacing_largest_96">96dp</dimen>
-    <dimen name="line_size">1dp</dimen>
+    <dimen name = "line_size">1dp</dimen>
+
+
+    <!--fonts-->
+
+    <dimen name="font_medium">32sp</dimen>
 
 
 </resources>
