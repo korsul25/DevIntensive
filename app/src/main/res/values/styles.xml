@@ -4,8 +4,47 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/color_primary</item>
-        <item name="colorPrimaryDark">@color/color_pripmary_dark</item>
-        <item name="colorAccent">@color/color_accent</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="android:colorAccent">@color/color_accent</item>
+    </style>
+
+    <style name="icon">
+        <item name="android:layout_width">@dimen/size_medial_24</item>
+        <item name="android:layout_height">@dimen/size_medial_24</item>
+    </style>
+
+    <style name="icon.left" parent="icon">
+        <item name="android:layout_gravity">top|left</item>
+        <item name="android:layout_marginTop">@dimen/spacing_medial_24</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_normal_16</item>
+    </style>
+
+    <style name="icon.right" parent="icon">
+        <item name="android:layout_gravity">top|right</item>
+        <item name="android:layout_marginTop">@dimen/spacing_medial_24</item>
+        <item name="android:layout_marginRight">@dimen/spacing_medium_32</item>
+    </style>
+
+    <style name="font_size">
+        <item name="android:gravity">center|bottom</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/font_medium</item>
+    </style>
+
+    <style name="bottom_txt">
+        <item name="android:gravity">center|top</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+    
+    <style name="separat">
+        <item name="android:layout_width">@dimen/size_tiny_2</item>
+        <item name="android:layout_height">@dimen/size_large_56</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/color_gray_light</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/size_normal_16</item>
     </style>
 
 </resources>
