@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
 <LinearLayout
 
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,32 +16,18 @@
     tools:context=".ui.activities.MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/size_largest_96"
-        android:background="@color/color_gray"
-        android:orientation="horizontal">
+        style="@style/head_gray">
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            style="@style/header">
 
         <TextView
             style="@style/font_size"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/five"
+
             />
 
             <TextView
                 style="@style/bottom_txt"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
                 android:text="@string/rating"
             />
 
@@ -51,26 +39,15 @@
 
 
         <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_weight="1.5"
-        android:gravity="center"
-        android:orientation="vertical">
+        style="@style/header_c">
 
         <TextView
             style="@style/font_size"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/five"
+
             />
 
         <TextView
             style="@style/bottom_txt"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
             android:text="@string/code"
             />
 
@@ -81,26 +58,15 @@
         </LinearLayout>
 
         <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
+            style="@style/header">
 
         <TextView
             style="@style/font_size"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/five"
+
             />
 
         <TextView
             style="@style/bottom_txt"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
             android:text="@string/projects"
             />
 
@@ -108,12 +74,10 @@
 
     </LinearLayout>
 
+
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/spacing_small_8"
-        android:layout_marginBottom="@dimen/spacing_small_8">
+        style="@style/based">
 
         <ImageView
             style="@style/icon.left"
@@ -121,28 +85,21 @@
 
             />
 
+
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="@dimen/size_larger_72"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="bottom"
-            android:layout_marginLeft="@dimen/spacing_medium_32"
-            android:layout_marginTop="@dimen/spacing_normal_16">
+            style="@style/base_ins">
+
             <android.support.design.widget.TextInputLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
+                    style="@style/ed_txt"
                     android:id="@+id/phone_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:hint="@string/mobile"
-                    android:inputType="phone"
-                    android:text="@string/number"
                     android:enabled="false"
-                    android:textColor="@color/color_black"
-                    android:textColorHint="@color/color_gray"
-                    android:focusable="false"/>
+                    android:focusable="false"
+                    android:text="@string/number"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -156,17 +113,10 @@
     </LinearLayout>
 
     <View
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/line_size"
-        android:background="@color/color_gray_light"
-        android:layout_marginLeft="@dimen/spacing_larger_72"/>
+        style="@style/view"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/spacing_small_8"
-        android:layout_marginBottom="@dimen/spacing_small_8">
+        style="@style/based">
 
         <ImageView
             style="@style/icon.left"
@@ -175,26 +125,17 @@
             />
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="@dimen/size_larger_72"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="bottom"
-            android:layout_marginLeft="@dimen/spacing_medium_32"
-            android:layout_marginTop="@dimen/spacing_normal_16">
+            style="@style/base_ins">
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
+                    style="@style/ed_txt"
                     android:id="@+id/email_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:hint="@string/email"
-                    android:inputType="phone"
                     android:text="@string/mail"
                     android:enabled="false"
-                    android:textColor="@color/color_black"
-                    android:textColorHint="@color/color_gray"
                     android:focusable="false"/>
 
             </android.support.design.widget.TextInputLayout>
@@ -207,70 +148,12 @@
             android:src="@drawable/ic_send_black_24dp"
             />
     </LinearLayout>
+
     <View
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/line_size"
-        android:background="@color/color_gray_light"
-        android:layout_marginLeft="@dimen/spacing_larger_72"/>
+        style="@style/view"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/spacing_small_8"
-        android:layout_marginBottom="@dimen/spacing_small_8">
-
-        <ImageView
-            style="@style/icon.left"
-            android:src="@drawable/ic_swap_vertical_circle_black_24dp"
-
-            />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="@dimen/size_larger_72"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="bottom"
-            android:layout_marginLeft="@dimen/spacing_medium_32"
-            android:layout_marginTop="@dimen/spacing_normal_16">
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <EditText
-                    android:id="@+id/vk_prof_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/VK"
-                    android:inputType="phone"
-                    android:text="@string/VK.com"
-                    android:enabled="false"
-                    android:textColor="@color/color_black"
-                    android:textColorHint="@color/color_gray"
-                    android:focusable="false"/>
-
-            </android.support.design.widget.TextInputLayout>
-
-        </LinearLayout>
-
-        <ImageView
-
-            style="@style/icon.right"
-            android:src="@drawable/ic_visibility_black_24dp"
-            />
-    </LinearLayout>
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/line_size"
-        android:background="@color/color_gray_light"
-        android:layout_marginLeft="@dimen/spacing_larger_72"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/spacing_small_8"
-        android:layout_marginBottom="@dimen/spacing_small_8">
+        style="@style/based">
 
         <ImageView
             style="@style/icon.left"
@@ -279,27 +162,18 @@
             />
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="@dimen/size_larger_72"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="bottom"
-            android:layout_marginLeft="@dimen/spacing_medium_32"
-            android:layout_marginTop="@dimen/spacing_normal_16">
+            style="@style/base_ins">
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
-                    android:id="@+id/git_repo_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/repo"
-                    android:inputType="phone"
-                    android:text="@string/Git"
+                    style="@style/ed_txt"
+                    android:id="@+id/vk_prof_et"
                     android:enabled="false"
-                    android:textColor="@color/color_black"
-                    android:textColorHint="@color/color_gray"
-                    android:focusable="false"/>
+                    android:focusable="false"
+                    android:hint="@string/VK"
+                    android:text="@string/VK.com"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -312,16 +186,47 @@
             />
     </LinearLayout>
     <View
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/line_size"
-        android:background="@color/color_gray_light"
-        android:layout_marginLeft="@dimen/spacing_larger_72"/>
+        style="@style/view"/>
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/spacing_small_8"
-        android:layout_marginBottom="@dimen/spacing_small_8">
+        style="@style/based">
+
+        <ImageView
+            style="@style/icon.left"
+            android:src="@drawable/ic_swap_vertical_circle_black_24dp"
+
+            />
+
+        <LinearLayout
+            style="@style/base_ins">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    style="@style/ed_txt"
+                    android:id="@+id/git_repo_et"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:text="@string/Git"
+                    android:hint="@string/repo"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <ImageView
+
+            style="@style/icon.right"
+            android:src="@drawable/ic_visibility_black_24dp"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/view"/>
+
+    <LinearLayout
+        style="@style/based">
 
         <ImageView
             style="@style/icon.left"
@@ -330,40 +235,28 @@
             />
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="@dimen/size_larger_72"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="bottom"
-            android:layout_marginLeft="@dimen/spacing_medium_32"
-            android:layout_marginTop="@dimen/spacing_normal_16">
+            style="@style/base_ins">
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
+                    style="@style/ed_txt"
+                    android:enabled="false"
+                    android:focusable="false"
                     android:id="@+id/mySelf_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:hint="@string/myself"
-                    android:inputType="phone"
-                    android:text="@string/devInt"
-                    android:enabled="true"
-                    android:textColor="@color/color_black"
-                    android:textColorHint="@color/color_gray"
-                    android:focusable="false"/>
+                    android:text="@string/devInt"/>
 
             </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
 
-
     </LinearLayout>
+
     <View
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/line_size"
-        android:background="@color/color_gray_light"
-        android:layout_marginLeft="@dimen/spacing_larger_72"/>
-    />
+        style="@style/view"/>
+
 
 
 </LinearLayout>
